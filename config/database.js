@@ -1,5 +1,5 @@
 const dbHost = process.env.DB_HOST || '127.0.0.1'
-const dbPort = process.env.DB_PORT || '3306'
+const dbPort = process.env.DB_PORT || '3004'
 
 module.exports = {
   "development": {

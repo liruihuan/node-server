@@ -13,7 +13,7 @@ var models = require('../models');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3004');
+var port = normalizePort(process.env.DB_PORT || '3004');
 // app.set('port', port);
 
 /**

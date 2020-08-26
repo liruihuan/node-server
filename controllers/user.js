@@ -44,7 +44,7 @@ const UsersController = {
         id: data.id
       }
     }).then((res) => {
-      ctx.body = res[0] ? { code: 1, msg: "更新成功!" } : { code: 2, msg: "数据无变化!" };
+      ctx.body = res[0] ? { code: 1, msg: "更新成功!" } : { code: 2, msg: "用户不存在!" };
     }).catch(error => {
       ctx.body = { code: 0, msg: "更新失败!" }
       console.log(error, "update user failed")
